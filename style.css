@@ -150,3 +150,16 @@ picture {
     cursor: pointer;
 }
 
+.rating:hover, .rating:active {
+    background-color: hsl(25, 97%, 53%);
+}
+.rating:hover a {
+    color: hsl(0, 0%, 100%);
+}
+
+.btn-submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: .5s;
+}
+
