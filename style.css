@@ -84,16 +84,20 @@ body {
     justify-content: space-between;
 }
 
-.rating-box {
-    width: 300px;
+.container {
+    width: 320px;
 
     background-color: hsl(213, 19%, 18%);
     margin: 1.5rem;
     padding: 1.4rem;
-
-    display: grid;
-    gap: .8rem;
     border-radius:1.2rem;
+}
+  
+.rating-box {
+    display: grid;
+    gap: .9rem;
+  
+    /* display: none; */
 }
 
 picture {
@@ -110,7 +114,7 @@ picture {
 
 .description {
     color:hsl(216, 12%, 54%);
-    font-size: .819rem;
+    font-size: .83rem;
     line-height:1.4;
     margin-bottom: .8rem;
 }
@@ -162,4 +166,46 @@ picture {
     color: hsl(25, 97%, 53%);
     transition: .5s;
 }
+
+.thank-you-box {
+    display: grid;
+    gap: .7rem;
+    display: none;
+
+    padding: 1.8rem;
+}
+
+.thank-you-box svg {
+    display: block;
+    margin: auto;
+}
+
+
+.result {
+    text-align: center;
+    margin: .8rem 0;
+}
+
+.result p {
+    display: inline;
+    
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(214, 12%, 23%);
+
+    font-size: .9rem;
+    padding: .4rem;
+    letter-spacing:.05rem;
+
+    border-radius: 1rem;
+}
+
+.thank-you-box .title {
+    text-align: center;
+}
+
+.thank-you-box .description {
+    text-align: center;
+    margin-bottom: .6rem;
+}
+
 
