@@ -85,19 +85,16 @@ body {
 }
 
 .container {
-    width: 320px;
-
     background-color: hsl(213, 19%, 18%);
     margin: 1.5rem;
-    padding: 1.4rem;
+    padding: 1.6rem;
     border-radius:1.2rem;
 }
   
 .rating-box {
+    max-width: 320px;
     display: grid;
     gap: .9rem;
-  
-    /* display: none; */
 }
 
 picture {
@@ -167,12 +164,16 @@ picture {
     transition: .5s;
 }
 
+/* Thnak you page */
 .thank-you-box {
+    max-width: 336px;
+    min-width: 322px;
+
     display: grid;
     gap: .7rem;
+    padding: 1.2rem;
+    
     display: none;
-
-    padding: 1.8rem;
 }
 
 .thank-you-box svg {
@@ -192,8 +193,8 @@ picture {
     color: hsl(25, 97%, 53%);
     background-color: hsl(214, 12%, 23%);
 
-    font-size: .9rem;
-    padding: .4rem;
+    font-size: .8rem;
+    padding: .4rem .7rem;
     letter-spacing:.05rem;
 
     border-radius: 1rem;

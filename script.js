@@ -27,12 +27,16 @@ function resetRatingButtons() {
 
 // submit button click
 submitButton.addEventListener('click', function() {
+    if(userRating === undefined) {
+        submitButton.style.backgroundColor = 'hsl(25, 97%, 53%)';
+        submitButton.style.color = 'hsl(0, 0%, 100%)';
+        return;
+    }
+
     ratingBox.style.display = 'none';
-    thankyouBox.style.display = 'block';
+    thankyouBox.style.display = 'grid';
 
     const resultContent = document.querySelector('.result-content');
-    console.log(userRating);
-    console.log(resultContent);
     resultContent.innerHTML = `You selected ${userRating} out of 5`;
 })
 
